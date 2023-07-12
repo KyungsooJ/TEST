@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="cpath" value="${pageContext.request.contextPath }"/>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div>${dto.nickName }</div>
+<h3>${dto.title }</h3>
+<h4>${dto.content }</h4>
+
+<div class="sb">
+	<div>
+		<button onclick="history.go(-1)">뒤로가기</button>
+	</div>
+	<div>
+		<a href="${cpath }/modify/${dto.idx}"><button>수정</button></a>
+		<a href="${cpath }/delete/${dto.idx}"><button>삭제</button></a>
+	</div>
+</div>
+
+</body>
+</html>
