@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="header.jsp" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h3>게시글 수정하기</h3>
+<hr>
+
+<form method="POST">
+	<p><input type="text" name="nickName" placeholder="닉네임" value="${dto.nickName }"></p>
+	<p><input type="text" name="title" placeholder="제목" value="${dto.title }"></p>
+	<p><input type="text" name="content" placeholder="내용" value="${dto.content }"></p>
+	<p><input type="submit"></p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+package com.itbank.model;
+
+import java.util.Date;
+
+public class BoardDTO {
+
+	private int idx;
+	private String nickName;
+	private String title;
+	private String content;
+	private Date writeDate;
+	
+	
+}
